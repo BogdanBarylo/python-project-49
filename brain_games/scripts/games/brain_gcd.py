@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-from random import randint, choice
+from math import gcd
+from random import randint
 from brain_games.cli import welcome_user
 from brain_games.scripts.brain_games import hello
 
@@ -7,23 +8,16 @@ hello()
 try_name = welcome_user()
 
 
-def calc():
+def gsd():
     try_counter = 0
     max_try = 3
-    print('What is the result of the expression?')
+    print('Find the greatest common divisor of given numbers.')
     while try_counter < max_try:
         first_number = randint(1, 100)
         second_number = randint(1, 100)
-        actions = ('*', '+', '-')
-        action = choice(actions)
-        print(f'Question: {first_number} {action} {second_number}')
-        if action == '+':
-            true_answer = first_number + second_number
-        elif action == '-':
-            true_answer = first_number - second_number
-        else:
-            true_answer = first_number * second_number
+        print(f'Question: {first_number} {second_number}')
         player_choice = input('Your answer: ')
+        true_answer = gcd(first_number, second_number)
         if player_choice == str(true_answer):
             try_counter += 1
             print('Correct!')
@@ -35,7 +29,7 @@ def calc():
 
 
 def main():
-    calc()
+    gsd()
 
 
 if __name__ == '__main__':
