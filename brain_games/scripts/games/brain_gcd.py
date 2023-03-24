@@ -27,7 +27,7 @@ def gsd():
                   f"Correct answer was {true_answer}. "
                   f"Let's try again, {try_name}!")
     if try_counter == max_try:
-        print(f'Congurations, {try_name}!')
+        print(f'Congratulations, {try_name}!')
 
 
 def main():

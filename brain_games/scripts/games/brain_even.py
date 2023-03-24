@@ -27,7 +27,7 @@ def even_check():
                   f"Let's try again, {try_name}!")
             try_counter += 4
     if try_counter == max_try:
-        print(f'Congurations, {try_name}!')
+        print(f'Congratulations, {try_name}!')
 
 
 def main():
