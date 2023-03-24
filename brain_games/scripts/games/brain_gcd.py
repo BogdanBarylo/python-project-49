@@ -23,7 +23,9 @@ def gsd():
             print('Correct!')
         else:
             try_counter += 4
-            print(f"'{player_choice}' is wrong answer ;(. Correct answer was {true_answer}. Let's try again, {try_name}!")
+            print(f"'{player_choice}' is wrong answer ;(. "
+                  f"Correct answer was {true_answer}. "
+                  f"Let's try again, {try_name}!")
     if try_counter == max_try:
         print(f'Congurations, {try_name}!')
 

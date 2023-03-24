@@ -7,20 +7,26 @@ hello()
 try_name = welcome_user()
 
 
-def even_check():
+def prime():
     try_counter = 0
     max_try = 3
     dict_answers = {'yes': 'no',
                     'no': 'yes'}
-    print('Answer "yes" if the number is even, otherwise answer "no"')
+    print('Answer "yes" if given number is prime. Otherwise answer "no".')
     while try_counter < max_try:
-        random_number = randint(1, 100)
-        print(f'Question: {random_number}')
+        number = randint(2, 100)
+        print(f'Question: {number}')
         player_choice = input('Your answer: ')
-        if random_number % 2 == 0 and player_choice == 'yes' or \
-           random_number % 2 != 0 and player_choice == 'no':
-            print('Correct!')
+        count = 1
+        primes_count = 0
+        while count <= number:
+            if number % count == 0:
+                primes_count += 1
+            count += 1
+        if primes_count == 2 and player_choice == 'yes' or \
+           primes_count != 2 and player_choice == 'no':
             try_counter += 1
+            print('Correct!')
         else:
             print(f"'{player_choice}' is wrong answer ;(. "
                   f"Correct answer was '{dict_answers.get(player_choice)}'. "
@@ -31,7 +37,7 @@ def even_check():
 
 
 def main():
-    even_check()
+    prime()
 
 
 if __name__ == '__main__':
