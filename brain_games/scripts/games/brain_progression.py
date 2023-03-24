@@ -7,22 +7,23 @@ hello()
 try_name = welcome_user()
 
 
-def calc():
+def progression():
     try_counter = 0
     max_try = 3
-    print('What is the result of the expression?')
+    print('What number is missing in the progression?')
     while try_counter < max_try:
-        first_number = randint(1, 100)
-        second_number = randint(1, 100)
-        actions = ('*', '+', '-')
-        action = choice(actions)
-        print(f'Question: {first_number} {action} {second_number}')
-        if action == '+':
-            true_answer = first_number + second_number
-        elif action == '-':
-            true_answer = first_number - second_number
-        else:
-            true_answer = first_number * second_number
+        count = 0
+        first_number = randint(1, 50)
+        step = randint(1, 10)
+        list_progression = [str(first_number)]
+        while count != 10:
+            first_number += step
+            list_progression.append(str(first_number))
+            count += 1
+        true_answer = choice(list_progression)
+        index_element = list_progression.index(true_answer)
+        list_progression[index_element] = '..'
+        print(f"Question: {' '.join(list_progression)}")
         player_choice = input('Your answer: ')
         if player_choice == str(true_answer):
             try_counter += 1
@@ -35,7 +36,7 @@ def calc():
 
 
 def main():
-    calc()
+    progression()
 
 
 if __name__ == '__main__':

@@ -18,16 +18,16 @@ def even_check():
     while try_counter < max_try:
         random_number = randint(1, 100)
         print(f'Question: {random_number}')
-        player_choise = input('Your answer: ')
-        if random_number % 2 == 0 and player_choise == 'yes' or \
-           random_number % 2 != 0 and player_choise == 'no':
+        player_choice = input('Your answer: ')
+        if random_number % 2 == 0 and player_choice == 'yes' or \
+           random_number % 2 != 0 and player_choice == 'no':
             print('Correct!')
             try_counter += 1
-        elif random_number % 2 == 0 and player_choise != 'yes':
-            print(f"{player_choise} {not_correct_1} {try_name}!")
+        elif random_number % 2 == 0 and player_choice != 'yes':
+            print(f"'{player_choice}' {not_correct_1} {try_name}!")
             try_counter += 4
         else:
-            print(f"{player_choise} {not_correct_2} {try_name}!")
+            print(f"'{player_choice}' {not_correct_2} {try_name}!")
             try_counter += 4
     if try_counter == max_try:
         print(f'Congurations, {try_name}!')
