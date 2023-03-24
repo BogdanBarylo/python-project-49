@@ -12,7 +12,7 @@ def even_check():
     max_try = 3
     dict_answers = {'yes': 'no',
                     'no': 'yes'}
-    print('Answer "yes" if the number is even, otherwise answer "no"')
+    print('Answer "yes" if the number is even, otherwise answer "no".')
     while try_counter < max_try:
         random_number = randint(1, 100)
         print(f'Question: {random_number}')
