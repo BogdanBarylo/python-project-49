@@ -22,22 +22,24 @@ And he has to answer yes if the number is even, or no if it is odd.
 5.Game: "brain-prime" the essence of the game is as follows: the user is shown a random number. The user has to answer yes if the number is prime, or no if it is not prime.
 [![asciicast](https://asciinema.org/a/0pdE5ugqw9L7BwNlpyVGzgnr0.svg)](https://asciinema.org/a/0pdE5ugqw9L7BwNlpyVGzgnr0)
 
-```
+
 Installation requirements:
 Python      3.10
 Poetry      1.4.0
 flake8      6.0.0
-```
-```
+
+
 Installation instructions:
 1.You need to download this repository to your computer.
-2.Log in to the project root repository, enter in the terminal - make install
-3.The next command should be make package-install
+2.Log in to the project root repository, enter in the terminal  ```make install```
+3.The next command should be ```make package-install```
 4.To enter the game you need to run the command make + game name. For example:
+```
 make brain-even
 make brain-prime
 make brain-gcd
 make brain-calc
 make brain-progression
-5.Enjoy the game
 ```
+5.Enjoy the game
+
