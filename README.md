@@ -37,9 +37,9 @@ Installation instructions:
 
 <sub>1.You need to download this repository to your computer.</sub>
 
-<sub>2.Log in to the project root repository, enter in the terminal  ```make install```</sub>
+<sub>2.Log in to the project root repository, enter in the terminal </sub> ```make install```
 
-<sub>3.The next command should be ```make package-install```</sub>
+<sub>3.The next command should be </sub> ```make package-install```
 
 <sub>4.To enter the game you need to run the command make + game name. For example:</sub>
 ```
