@@ -17,7 +17,7 @@ And he has to answer yes if the number is even, or no if it is odd.
 3.Game: "brain-gcd" the essence of the game is as follows: the user is shown two random numbers. The user must calculate and enter the greatest common divisor of these numbers.
 [![asciicast](https://asciinema.org/a/VAQzgia7gZCuk9wxztw57YIbb.svg)](https://asciinema.org/a/VAQzgia7gZCuk9wxztw57YIbb)
 
-4.Game: "brain-pogression" the essence of the game is as follows: the user is shown a random series of progression consisting of 9 numbers and one missing number. The user must enter the missing number.
+4.Game: "brain-progression" the essence of the game is as follows: the user is shown a random series of progression consisting of 9 numbers and one missing number. The user must enter the missing number.
 [![asciicast](https://asciinema.org/a/S8KNyibH5QuTiRnBsp57Oi4Ol.svg)](https://asciinema.org/a/S8KNyibH5QuTiRnBsp57Oi4Ol)
 
 5.Game: "brain-prime" the essence of the game is as follows: the user is shown a random number. The user has to answer yes if the number is prime, or no if it is not prime.
