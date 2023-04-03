@@ -5,6 +5,7 @@ MAX_ROUNDS = 3
 def run(RULES, get_question_and_answer):
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
+    print(f'Hello, {name}!')
     print(RULES)
     counter_true_answers = 0
     for _ in range(MAX_ROUNDS):
