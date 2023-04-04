@@ -3,7 +3,7 @@ import operator
 RULES = 'What is the result of the expression?'
 
 
-def get_calc():
+def get_question_and_answer():
     first_number = randint(1, 100)
     second_number = randint(1, 100)
     actions = ('*', '+', '-')
@@ -21,8 +21,3 @@ def get_operator(action):
         return operator.sub
     else:
         return operator.mul
-
-
-def get_question_and_answer():
-    question, true_answer = get_calc()
-    return question, true_answer

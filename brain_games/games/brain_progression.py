@@ -2,7 +2,7 @@ from random import randint, choice
 RULES = 'What number is missing in the progression?'
 
 
-def get_progression():
+def get_question_and_answer():
     progression = build_progression()
     true_answer = choice(progression)
     index_element = progression.index(true_answer)
@@ -14,14 +14,9 @@ def get_progression():
 def build_progression():
     first_number = randint(1, 50)
     step = randint(1, 10)
-    list_progression = [str(first_number)]
+    progression_list = [str(first_number)]
     range_progression = 11
     for _ in range(range_progression):
         first_number += step
-        list_progression.append(str(first_number))
-    return list_progression
-
-
-def get_question_and_answer():
-    question, true_answer = get_progression()
-    return question, true_answer
+        progression_list .append(str(first_number))
+    return progression_list

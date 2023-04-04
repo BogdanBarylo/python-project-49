@@ -3,7 +3,7 @@ from random import randint
 RULES = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
-def even_check():
+def get_question_and_answer():
     random_number = randint(1, 100)
     question = f'Question: {str(random_number)}'
     true_answer = "yes" if is_even(random_number) else "no"
@@ -15,8 +15,3 @@ def is_even(random_number):
         return True
     else:
         return False
-
-
-def get_question_and_answer():
-    question, true_answer = even_check()
-    return question, true_answer
