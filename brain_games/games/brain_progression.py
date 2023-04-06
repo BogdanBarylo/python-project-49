@@ -18,5 +18,5 @@ def build_progression():
     range_progression = 11
     for _ in range(range_progression):
         first_number += step
-        progression_list .append(str(first_number))
+        progression_list.append(str(first_number))
     return progression_list
